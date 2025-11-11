@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://bvrop0la1xrq6"]
+
+[ext_resource type="PackedScene" uid="uid://bay25ebfl4cip" path="res://assets/scenes/player.tscn" id="1_kpi06"]
+[ext_resource type="PackedScene" uid="uid://cehr3qpb0jh2r" path="res://assets/systems/interactionArea.tscn" id="2_kpi06"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kpi06"]
+size = Vector2(154.5, 101.5)
+
+[node name="main" type="Node2D"]
+
+[node name="player" parent="." instance=ExtResource("1_kpi06")]
+position = Vector2(675, 506)
+
+[node name="interactionArea" parent="." instance=ExtResource("2_kpi06")]
+position = Vector2(300, 242)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="interactionArea"]
+shape = SubResource("RectangleShape2D_kpi06")
+metadata/_edit_lock_ = true

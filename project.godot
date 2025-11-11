@@ -11,13 +11,20 @@ config_version=5
 [application]
 
 config/name="game-off-2025"
+run/main_scene="uid://bvrop0la1xrq6"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+interactionManager="*res://assets/systems/interactionManager.tscn"
 
 [display]
 
 window/size/viewport_width=1024
 window/size/viewport_height=768
+window/stretch/mode="canvas_items"
+window/stretch/scale_mode="integer"
 
 [editor]
 
@@ -27,6 +34,10 @@ version_control/autoload_on_startup=true
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/gdterm/plugin.cfg", "res://addons/script-ide/plugin.cfg")
+
+[global_group]
+
+player="the player of the game - duh"
 
 [input]
 
