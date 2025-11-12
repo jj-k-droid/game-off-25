@@ -18,3 +18,12 @@ texture = ExtResource("2_14505")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_4wcc8")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+limit_left = -1600
+limit_top = -1200
+limit_right = 1600
+limit_bottom = 1200
+limit_smoothed = true
+position_smoothing_enabled = true
+position_smoothing_speed = 10.0
