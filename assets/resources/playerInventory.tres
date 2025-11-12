@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="inventory" load_steps=4 format=3 uid="uid://df673v843i5pi"]
+
+[ext_resource type="Script" uid="uid://b7b6n8fh708n3" path="res://assets/scripts/inventoryItem.gd" id="1_vjwm5"]
+[ext_resource type="Resource" uid="uid://c35r3tsj8jany" path="res://assets/resources/scrapWood.tres" id="2_0xdlj"]
+[ext_resource type="Script" uid="uid://tm4u4lyv0d1l" path="res://assets/scripts/inventory.gd" id="2_v52fw"]
+
+[resource]
+script = ExtResource("2_v52fw")
+items = Array[ExtResource("1_vjwm5")]([ExtResource("2_0xdlj"), null, null, null, null, null])
+metadata/_custom_type_script = "uid://tm4u4lyv0d1l"

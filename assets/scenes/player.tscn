@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://bay25ebfl4cip"]
+[gd_scene load_steps=5 format=3 uid="uid://bay25ebfl4cip"]
 
 [ext_resource type="Script" uid="uid://bdi8puwjlp3ux" path="res://assets/scripts/player.gd" id="1_s027a"]
+[ext_resource type="Resource" uid="uid://df673v843i5pi" path="res://assets/resources/playerInventory.tres" id="2_4wcc8"]
 [ext_resource type="Texture2D" uid="uid://bokfml2dktapl" path="res://icon.svg" id="2_14505"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4wcc8"]
@@ -10,6 +11,7 @@ height = 128.0
 [node name="player" type="CharacterBody2D" groups=["player"]]
 motion_mode = 1
 script = ExtResource("1_s027a")
+inventory = ExtResource("2_4wcc8")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_14505")

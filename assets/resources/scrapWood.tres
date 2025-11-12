@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="inventoryItem" load_steps=3 format=3 uid="uid://c35r3tsj8jany"]
+
+[ext_resource type="Script" uid="uid://b7b6n8fh708n3" path="res://assets/scripts/inventoryItem.gd" id="1_eeohy"]
+[ext_resource type="Texture2D" uid="uid://bokfml2dktapl" path="res://icon.svg" id="2_wbjhc"]
+
+[resource]
+script = ExtResource("1_eeohy")
+name = "scrap wood"
+texture = ExtResource("2_wbjhc")
+metadata/_custom_type_script = "uid://b7b6n8fh708n3"

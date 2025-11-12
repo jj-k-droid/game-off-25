@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=3 uid="uid://33plyn4lhdy2"]
+
+[ext_resource type="Texture2D" uid="uid://bokfml2dktapl" path="res://icon.svg" id="1_ajqxo"]
+
+[node name="Panel" type="Panel"]
+self_modulate = Color(0, 0, 0, 0)
+clip_contents = true
+custom_minimum_size = Vector2(16, 16)
+offset_right = 128.0
+offset_bottom = 128.0
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+self_modulate = Color(3.6991873, 3.6991873, 3.577318, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_ajqxo")
+region_rect = Rect2(6.7250633, 102.0515, 22.187687, 19.826553)
+patch_margin_left = 2
+patch_margin_top = 2
+patch_margin_right = 2
+patch_margin_bottom = 2

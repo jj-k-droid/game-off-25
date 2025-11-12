@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://bvrop0la1xrq6"]
+[gd_scene load_steps=5 format=3 uid="uid://bvrop0la1xrq6"]
 
 [ext_resource type="PackedScene" uid="uid://bay25ebfl4cip" path="res://assets/scenes/player.tscn" id="1_kpi06"]
 [ext_resource type="PackedScene" uid="uid://cehr3qpb0jh2r" path="res://assets/systems/interactionArea.tscn" id="2_kpi06"]
+[ext_resource type="PackedScene" uid="uid://d05dljiewwhw6" path="res://assets/systems/inventoryUi.tscn" id="3_dfgan"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kpi06"]
 size = Vector2(154.5, 101.5)
@@ -13,7 +14,20 @@ position = Vector2(675, 506)
 
 [node name="interactionArea" parent="." instance=ExtResource("2_kpi06")]
 position = Vector2(300, 242)
+action_name = "pick up :)"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="interactionArea"]
 shape = SubResource("RectangleShape2D_kpi06")
 metadata/_edit_lock_ = true
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1024.0
+offset_bottom = 768.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="inventoryUI" parent="Control" instance=ExtResource("3_dfgan")]
+layout_mode = 1
